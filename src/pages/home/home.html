@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Dépense</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form text-center name="transactionForm">
+    <ion-list>
+      <ion-row radio-group>
+        <ion-item col-6>
+          <ion-label>Entrée</ion-label>
+          <ion-radio value="0" checked></ion-radio>
+        </ion-item>
+        <ion-item col-6>
+          <ion-label>Sortie</ion-label>
+          <ion-radio value="1"></ion-radio>
+        </ion-item>
+      </ion-row>      
+      <ion-item>
+        <ion-label for="amount">Montant</ion-label>
+        <ion-input type="number" name="amount"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Section</ion-label>
+        <ion-select>
+          <ion-option value="f">Voiture</ion-option>
+          <ion-option value="m">Maison</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    <button ion-button>
+      Valider
+    </button>
+  </form>
+</ion-content>
